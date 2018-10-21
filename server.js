@@ -14,7 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route
 app.get('/', (req, res, next) => {
-    res.send('test');
+    res.render('index');
+    // res.send('index');
 });
 
 server.listen(port, ()=>{
