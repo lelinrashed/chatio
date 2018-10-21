@@ -3,8 +3,11 @@ html
     head
         title Real time chat
         link(rel="stylesheet", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/style.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
         script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+        script(src="/js/main.js")
+        script(src="/socket.io/socket.io.js")
     body
         nav.navbar.navbar-inverse(style="border-radius:0")
             .container
@@ -13,6 +16,7 @@ html
         .container
             .row
                 .col-md-8
+                    #error
                     #userFormWrap
                         h1 Create Username
                         form#userForm
